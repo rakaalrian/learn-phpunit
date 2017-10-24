@@ -2,7 +2,7 @@
 /**
 * 
 */
-namespace App\Models;
+namespace User\Models;
 
 class User// extends AnotherClass
 {

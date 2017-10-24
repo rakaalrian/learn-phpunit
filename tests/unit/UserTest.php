@@ -9,7 +9,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
 	protected $user;
 
 	public function setUp(){
-		$this->user = new App\Models\User;
+		$this->user = new User\Models\User;
 	}
 	/** @test */
 	public function get_the_first_name(){
@@ -19,7 +19,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function testGetTheLastName(){
-		$user = new \App\Models\User;
+		$user = new \User\Models\User;
 
 		$user->setLastName('Garret');
 
@@ -27,7 +27,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function testGetTheFullName(){
-		$user = new \App\Models\User;
+		$user = new \User\Models\User;
 
 		$user->setFirstName('Billy');
 		$user->setLastName('Garret');
@@ -36,7 +36,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function testGetFirstAndLastNameAreTrimmed(){
-		$user = new \App\Models\User;
+		$user = new \User\Models\User;
 
 		$user->setFirstName('  Billy     ');
 		$user->setLastName('  Garret ');
@@ -46,7 +46,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function testToSetEmailAddress(){
-		$user = new \App\Models\User;
+		$user = new \User\Models\User;
 
 		$user->setEmail('billy@mail.com');
 
@@ -54,7 +54,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function testGetArrayContainFullNameAndEmail(){
-		$user = new \App\Models\User;
+		$user = new \User\Models\User;
 
 		$user->setFirstName('  Billy     ');
 		$user->setLastName('  Garret ');

@@ -19,14 +19,14 @@ class ComposerStaticInitb5e96cc7bdf5ebfa9fef80d37053e5ff
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'U' => 
+        array (
+            'User\\' => 5,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
-        ),
-        'A' => 
-        array (
-            'App\\' => 4,
         ),
     );
 
@@ -41,6 +41,10 @@ class ComposerStaticInitb5e96cc7bdf5ebfa9fef80d37053e5ff
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
+        'User\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -48,10 +52,6 @@ class ComposerStaticInitb5e96cc7bdf5ebfa9fef80d37053e5ff
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
-        ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
