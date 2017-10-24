@@ -19,9 +19,9 @@ class ComposerStaticInitb5e96cc7bdf5ebfa9fef80d37053e5ff
         array (
             'Webmozart\\Assert\\' => 17,
         ),
-        'U' => 
+        'M' => 
         array (
-            'User\\' => 5,
+            'Mantap\\' => 7,
         ),
         'D' => 
         array (
@@ -41,7 +41,7 @@ class ComposerStaticInitb5e96cc7bdf5ebfa9fef80d37053e5ff
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
-        'User\\' => 
+        'Mantap\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),

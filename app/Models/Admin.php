@@ -4,7 +4,7 @@
 */
 namespace Mantap\Models;
 
-class User// extends AnotherClass
+class Admin// extends AnotherClass
 {
 	
 	public $first_name;

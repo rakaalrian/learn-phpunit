@@ -8,13 +8,13 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
 
 	/** @test */
 	public function empty_instantiated_collection_return_no_item(){
-		$collection = new \User\Support\Collection;
+		$collection = new \Mantap\Support\Collection;
 
 		$this->assertEmpty($collection->get());
 	}
 
 	public function test_collection_items_count_is_correct(){
-		$collection = new \User\Support\Collection([
+		$collection = new \Mantap\Support\Collection([
 			'one', 'two', 'three'
 		]);
 
@@ -22,7 +22,7 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function test_collection_items_is_match(){
-		$collection = new \User\Support\Collection([
+		$collection = new \Mantap\Support\Collection([
 			'one', 'two', 'three'
 		]);
 
@@ -33,13 +33,13 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function test_collection_is_instance_of_iterator_aggregate(){
-		$collection = new \User\Support\Collection;
+		$collection = new \Mantap\Support\Collection;
 
 		$this->assertInstanceOf(IteratorAggregate::class, $collection);
 	}
 
 	public function test_collection_can_be_iterated(){
-		$collection = new \User\Support\Collection([
+		$collection = new \Mantap\Support\Collection([
 			'one', 'two', 'three'
 		]);
 
@@ -54,8 +54,8 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function test_collection_can_be_merged(){
-		$collection1 = new User\Support\Collection(['one', 'two']);
-		$collection2 = new User\Support\Collection(['three', 'four', 'five']);
+		$collection1 = new Mantap\Support\Collection(['one', 'two']);
+		$collection2 = new Mantap\Support\Collection(['three', 'four', 'five']);
 
 		$collection1->merge($collection2);
 
@@ -64,7 +64,7 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function test_add_to_existing_collection(){
-		$collection = new \User\Support\Collection(['one', 'two']);
+		$collection = new \Mantap\Support\Collection(['one', 'two']);
 		$collection->add(['three']);
 
 		$this->assertEquals(3, $collection->count());
@@ -72,7 +72,7 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function test_return_json_endcoded_items(){
-		$collection = new \User\Support\Collection([
+		$collection = new \Mantap\Support\Collection([
 			['username' => 'alex'],
 			['username' => 'billy'],
 		]);
@@ -82,7 +82,7 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
 	}
 
 	public function test_encoding_a_collection_object_returns_json(){
-		$collection = new \User\Support\Collection([
+		$collection = new \Mantap\Support\Collection([
 			['username' => 'alex'],
 			['username' => 'billy'],
 		]);
